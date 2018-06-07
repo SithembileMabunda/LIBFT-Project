@@ -1,44 +1,58 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/07 15:56:30 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/07 15:56:40 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:22:44 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:22:54 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../Include/Headers.h"
 #include "../Includes/Projects.h"
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void	ft_putnbr(int n)
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
 	int i;
+	int j;
+	int len;
 
 	i = 0;
-	if (n >= 0)
-		i = n;
-	if (n < 0)
+	j = 0;
+	while (dstsize != 0 && dst[i] != '\0')
 	{
-		i = n * -1;
-		ft_putchar('-');
+		i++;
+		dstsize--;
 	}
-	if (i >= 10)
+	if ((dstsize - 1) == 0)
+		return ((i) + strlen(src));
+	len = dstsize - i;
+	while (src[j] != '\0')
 	{
-		ft_putnbr(i / 10);
-		ft_putchar((i % 10) + '0');
+		if (len != 1)
+		{
+			dst[i] = src[j];
+			len--;
+			i++;
+		}
+		j++;
 	}
+	dst[i] = '\0';
+	return (i);
 }
 
 int		main(void)
 {
-	ft_putnbr(-676);
+	char first[50];
+	char second[50];
+	int c;
+	strcpy(first, "hello");
+	strcpy(second, "world");
+
+	c = (int) ft_strlcat(first, second, 6);
+
+	printf("%d\n", c);
 	return (0);
 }

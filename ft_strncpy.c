@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strncpy.c                                          :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/16 07:34:38 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/21 16:07:12 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:25:12 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:25:21 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 char	*ft_strncpy(char *dst, const char *src, size_t len)
 {

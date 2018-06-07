@@ -5,13 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 11:11:32 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/22 12:42:53 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:42:19 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:42:30 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 void	*ft_memalloc(size_t size)
 {

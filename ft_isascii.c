@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isascii.c                                          :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/16 16:26:38 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/16 16:44:23 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:32:41 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:33:26 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 int		ft_isascii(int c)
 {
-	return (c >= 0 && c <= 177);
+	if (c >= 0 && c <= 177)
+		return (1);
+	else
+		return (0);
 }

@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/17 16:17:00 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/17 16:19:45 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:57:31 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:57:40 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 void	ft_putendl(char const *s)
 {

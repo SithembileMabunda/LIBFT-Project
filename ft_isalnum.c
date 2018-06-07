@@ -1,38 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/07 15:17:02 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/07 15:17:11 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:32:12 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:32:24 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../Include/Headers.h"
 #include "../Includes/Projects.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+int		ft_isalnum(int c);
 {
-	int i;
-	char *str;
-	
-	i = 0;
-	str = (char *)s;
-	while (i != n)
-	{
-		*(unsigned char*)(str + i) = (unsigned char)c;
-		i++;
-	}
-	return (str);
+	if (c >= 'a' && c <= 'z')
+		return (c);
+	else if (c >= 'A' && c <= 'Z')
+		return (c);
+	else if (c >= 0 && c <= 9)
+		return (c);
+	else
+		return (0);
 }
-
-/*int		main(void)
-{
-	char str[50];
-	strcpy(str, "This is strong.h library function");
-	ft_memset(str, '@', 5);
-	printf("%s\n", str);
-	return (0);
-}*/

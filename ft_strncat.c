@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/07 15:17:02 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/07 15:17:11 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:26:19 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:26:47 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../Include/Headers.h"
 #include "../Includes/Projects.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 {
 	int i;
-	char *str;
-	
+
 	i = 0;
-	str = (char *)s;
-	while (i != n)
+	while (s1[i] != '\0')
+		i++;
+	int dest_len = i;
+	while (s2[i] != '\0' && i < n)
 	{
-		*(unsigned char*)(str + i) = (unsigned char)c;
+		s1[dest_len + i] = s2[i];
 		i++;
 	}
-	return (str);
+	s1[dest_len +i] = s2[i];
+	return (s1);
 }
-
-/*int		main(void)
-{
-	char str[50];
-	strcpy(str, "This is strong.h library function");
-	ft_memset(str, '@', 5);
-	printf("%s\n", str);
-	return (0);
-}*/

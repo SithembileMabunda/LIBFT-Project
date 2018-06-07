@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 12:44:19 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/22 12:47:50 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:42:44 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:42:55 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlb.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 void	ft_memdel(void **ap)
 {

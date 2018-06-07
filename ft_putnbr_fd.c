@@ -1,38 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/07 15:17:02 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/07 15:17:11 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:56:57 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:57:06 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../Include/Headers.h"
 #include "../Includes/Projects.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_putnbr_fd(int n, int fd)
 {
 	int i;
-	char *str;
-	
-	i = 0;
-	str = (char *)s;
-	while (i != n)
-	{
-		*(unsigned char*)(str + i) = (unsigned char)c;
-		i++;
-	}
-	return (str);
-}
 
-/*int		main(void)
-{
-	char str[50];
-	strcpy(str, "This is strong.h library function");
-	ft_memset(str, '@', 5);
-	printf("%s\n", str);
-	return (0);
-}*/
+	i = 0;
+	if (n >= 0)
+		i = n;
+	if (n < 0)
+	{
+		i = n * -1;
+		ft_putchar('-');
+	}
+	if (i >= 10)
+	{
+		ft_putnbr_fd(i / 10, fd);
+		ft_putchar((i % 10) + '0');
+	}
+}

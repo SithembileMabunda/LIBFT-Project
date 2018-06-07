@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/04 11:29:44 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/04 11:36:09 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:52:57 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:53:08 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {

@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/02 14:01:35 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/02 14:03:00 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:46:36 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:46:46 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

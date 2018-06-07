@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isdigit.c                                          :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/16 16:45:49 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/16 16:47:08 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:33:57 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:34:07 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 int		ft_isdigital(int c)
 {
-	return (c >= 0 && c <= 9);
+	if (c >= 0 && c <= 9)
+		return (1);
+	else
+		return (0);
 }

@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strcat.c                                           :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/17 09:47:21 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/21 08:44:14 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:25:48 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:25:56 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 char	*ft_strcat(char *restrict s1, const char *restrict s2)
 {

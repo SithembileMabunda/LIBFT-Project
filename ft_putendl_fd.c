@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/24 09:01:40 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/24 09:06:33 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:58:00 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:58:09 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unstd.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 void	ft_putendl_fd(char const *s, int fd)
 {

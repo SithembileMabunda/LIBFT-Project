@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlen.c                                           :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/16 08:17:03 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/16 08:22:00 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:23:17 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:23:28 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 size_t		ft_strlen(const char *s)
 {

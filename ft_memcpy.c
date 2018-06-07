@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memcpy.c                                           :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/21 15:54:43 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/21 16:07:37 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:20:55 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:21:05 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

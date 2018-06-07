@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memcmp.c                                           :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 09:47:29 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/01 11:02:32 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:20:24 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:20:34 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

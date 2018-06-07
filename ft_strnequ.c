@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/01 11:16:01 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/01 11:19:42 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:49:40 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:49:50 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {

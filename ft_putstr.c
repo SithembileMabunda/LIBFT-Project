@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/16 07:51:39 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/16 08:08:52 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:55:33 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:55:43 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 void	ft_putstr(char const *s)
 {

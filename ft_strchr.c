@@ -1,35 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strchr.c                                           :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/17 08:16:14 by smabunda          #+#    #+#             */
-/*   Updated: 2018/05/17 09:43:17 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/07 15:27:16 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/07 15:27:25 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "../Include/Headers.h"
+#include "../Includes/Projects.h"
 
 char	*ft_strchr(const char *s, int c)
 {
-	//while (s[i] >= j && s[i] <= '\0')
-	//i++;
 	int i;
-	char j;
-	int k;
-	char *dst;
-	
-	j = (char)c;
+
 	i = 0;
-	while (str[i] != j)
-		i++;
-	k = i;
-	while (str[k] != '\0')
+	if (c == '\0')
+		return ((char *)s);
+	if (s == NULL)
+		return (NULL);
+	while (s[i] != '\0')
 	{
+		if (s[i] == c)
+			return ((char *)s + i);
+		i++;
 	}
+	return (0);
 }
 
 int		main(void)
