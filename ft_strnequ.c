@@ -6,12 +6,12 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:49:40 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/07 15:49:50 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/09 15:39:31 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Include/Headers.h"
-#include "../Includes/Projects.h"
+#include "header.h"
+#include "src.h"
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {

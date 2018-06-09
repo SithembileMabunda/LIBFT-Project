@@ -6,12 +6,12 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:22:44 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/07 15:22:54 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/09 15:37:45 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Include/Headers.h"
-#include "../Includes/Projects.h"
+#include "header.h"
+#include "src.h"
 
 size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {

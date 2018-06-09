@@ -1,60 +1,61 @@
 NAME = Libft.a
 
-SOURCES = Part_1_Libc/ft_memset.c \
-		  Part_1_Libc/ft_bzero.c \
-		  Part_1_Libc/ft_memcpy.c \
-		  Part_1_Libc/ft_memccpy.c \
-		  Part_1_Libc/ft_memchr.c \
-		  Part_1_Libc/ft_memcmp.c \
-		  Part_1_Libc/ft_strlen.c \
-		  Part_1_Libc/ft_strdup.c \
-		  Part_1_Libc/ft_strcpy.c \
-		  Part_1_Libc/ft_strncpy.c \
-		  Part_1_Libc/ft_strcat.c \
-		  Part_1_Libc/ft_strncat.c \
-		  Part_1_Libc/ft_strlcat.c \
-		  Part_1_Libc/ft_strchr.c \
-		  Part_1_Libc/ft_strrchr.c \
-		  Part_1_Libc/ft_strstr.c \
-		  Part_1_Libc/ft_strnstr.c \
-		  Part_1_Libc/ft_strcmp.c \
-		  Part_1_Libc/ft_strncmp.c \
-		  Part_1_Libc/ft_atoi.c \
-		  Part_1_Libc/ft_isalpha.c \
-		  Part_1_Libc/ft_isdigit.c \
-		  Part_1_Libc/ft_isascii.c \
-		  Part_1_Libc/ft_isprint.c \
-		  Part_1_Libc/ft_toupper.c \
-		  Part_1_Libc/ft_tolower.c \
+SOURCES = ft_memset.c \
+		  ft_bzero.c \
+		  ft_memcpy.c \
+		  ft_memccpy.c \
+		  ft_memchr.c \
+		  ft_memcmp.c \
+		  ft_strlen.c \
+		  ft_strdup.c \
+		  ft_strcpy.c \
+		  ft_strncpy.c \
+		  ft_strcat.c \
+		  ft_strncat.c \
+		  ft_strlcat.c \
+		  ft_strchr.c \
+		  ft_strrchr.c \
+		  ft_strstr.c \
+		  ft_strnstr.c \
+		  ft_strcmp.c \
+		  ft_strncmp.c \
+		  ft_atoi.c \
+		  ft_isalpha.c \
+		  ft_isdigit.c \
+		  ft_isascii.c \
+		  ft_isprint.c \
+		  ft_toupper.c \
+		  ft_tolower.c \
 		  \
-		  Part_2_Libc/ft_memalloc.c \
-		  Part_2_Libc/ft_memdel.c \
-		  Part_2_Libc/ft_strnew.c \
-		  Part_2_Libc/ft_strdel.c \
-		  Part_2_Libc/ft_strclr.c \
-		  Part_2_Libc/ft_striter.c \
-		  Part_2_Libc/ft_striteri.c \
-		  Part_2_Libc/ft_strmap.c \
-		  Part_2_Libc/ft_strmapi.c \
-		  Part_2_Libc/ft_strequ.c \
-		  Part_2_Libc/ft_strnequ.c \
-		  Part_2_Libc/ft_strsub.c \
-		  Part_2_Libc/ft_strjoin.c \
-		  Part_2_Libc/ft_strtrim.c \
-		  Part_2_Libc/ft_strsplit.c \
-		  Part_2_Libc/ft_itoa.c \
-		  Part_2_Libc/ft_putchar.c \
-		  Part_2_Libc/ft_putstr.c \
-		  Part_2_Libc/ft_putendl.c \
-		  Part_2_Libc/ft_putnbr.c \
-		  Part_2_Libc/ft_putchar_fd.c \
-		  Part_2_Libc/ft_putstr_fd.c \
-		  Part_2_Libc/ft_putendl_fd.c \
-		  Part_2_Libc/ft_putnbr_fd.c \
+		  ft_memalloc.c \
+		  ft_memdel.c \
+		  ft_strnew.c \
+		  ft_strdel.c \
+		  ft_strclr.c \
+		  ft_striter.c \
+		  ft_striteri.c \
+		  ft_strmap.c \
+		  ft_strmapi.c \
+		  ft_strequ.c \
+		  ft_strnequ.c \
+		  ft_strsub.c \
+		  ft_strjoin.c \
+		  ft_strtrim.c \
+		  ft_strsplit.c \
+		  ft_itoa.c \
+		  ft_putchar.c \
+		  ft_putstr.c \
+		  ft_putendl.c \
+		  ft_putnbr.c \
+		  ft_putchar_fd.c \
+		  ft_putstr_fd.c \
+		  ft_putendl_fd.c \
+		  ft_putnbr_fd.c \
 
-OBJECTS = Objects/*.o
+OBJECTS = *.o
 
-INCLUDES = Includes/Headers.h Includes/Projects.h
+INCLUDES = header.h \
+		   src.h \
 
 CC = gcc
 

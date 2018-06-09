@@ -1,38 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/07 15:29:47 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:35:55 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/09 11:37:37 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/09 15:41:17 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 #include "src.h"
 
-int		ft_strcmp(const char *s1, const char *s2)
+char	*ft_strtrim(char *s)
 {
+	int a;
+	int b;
 	int i;
+	int k;
+	char *str;
 
+	a = 0;
+	k = 0;
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
+	b = ft_strlen(s) - 1;
+	while (s[a] == ' ' || s[a] == '\n' || s[a] == '\t')
+		a++;
+	while (s[b] == ' ' || s[b] == '\n' || s[b] == '\t')
+		b++;
+	str = (char *) malloc(sizeof(char) * (((k = strlen(s)) - (b - a)) + 1));
+	while (s[a] <= s[b])
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+		str[i] = s[a];
+		a++;
 		i++;
 	}
-	return (0);
-}
-
-int	main(int ac, char **av)
-{
-	if (ac == 3)
-	{
-		printf("string cmp = %d\n", ft_strcmp(av[1], av[2]));
-		printf("string original = %d", strcmp(av[1], av[2]));
-	}
-	return (0);
+	return (str);
 }
