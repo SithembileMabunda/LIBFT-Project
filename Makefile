@@ -1,11 +1,24 @@
-NAME = Libft.a
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: smabunda <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/10 15:47:08 by smabunda          #+#    #+#              #
+#    Updated: 2018/06/11 10:42:27 by smabunda         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = libft.a
 
 SOURCES = ft_memset.c \
 		  ft_bzero.c \
-		  ft_memcpy.c \
 		  ft_memccpy.c \
+		  ft_memcpy.c \
 		  ft_memchr.c \
 		  ft_memcmp.c \
+		  ft_memmove.c \
 		  ft_strlen.c \
 		  ft_strdup.c \
 		  ft_strcpy.c \
@@ -20,6 +33,7 @@ SOURCES = ft_memset.c \
 		  ft_strcmp.c \
 		  ft_strncmp.c \
 		  ft_atoi.c \
+		  ft_isalnum.c \
 		  ft_isalpha.c \
 		  ft_isdigit.c \
 		  ft_isascii.c \
@@ -29,8 +43,8 @@ SOURCES = ft_memset.c \
 		  \
 		  ft_memalloc.c \
 		  ft_memdel.c \
-		  ft_strnew.c \
 		  ft_strdel.c \
+		  ft_strnew.c \
 		  ft_strclr.c \
 		  ft_striter.c \
 		  ft_striteri.c \
@@ -51,15 +65,18 @@ SOURCES = ft_memset.c \
 		  ft_putstr_fd.c \
 		  ft_putendl_fd.c \
 		  ft_putnbr_fd.c \
+		  \
+		  ft_strrev.c \
 
 OBJECTS = *.o
 
-INCLUDES = header.h \
-		   src.h \
+INCLUDES = libft.h
 
 CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror -c
+
+all : $(NAME)
 
 $(NAME) :
 	$(CC) $(CFLAGS) $(SOURCES) -I $(INCLUDES)
