@@ -6,21 +6,21 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:46:36 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:38:31 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/13 08:48:30 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int i;
-	char *str;
+	int		i;
+	char	*str;
 
+	i = 0;
 	while (s[i] != '\0')
 		i++;
-	str = (char *) malloc(sizeof(char) * (i + 1));
+	str = (char *)malloc(sizeof(char) * (i + 1));
 	i = 0;
 	if (str == NULL)
 		return (NULL);

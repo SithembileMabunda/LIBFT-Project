@@ -6,20 +6,21 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:52:57 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:41:01 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/11 12:39:55 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	int i;
-	char *str;
+	size_t	i;
+	char	*str;
 
 	i = 0;
-	str = (char *) malloc(sizeof(char) * (len + 1));
+	if (s == NULL)
+		return (NULL);
+	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 		return (NULL);
 	while (i < len && s[start] != '\0')

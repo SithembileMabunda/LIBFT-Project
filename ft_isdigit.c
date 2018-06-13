@@ -6,16 +6,15 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:33:57 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:28:08 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/10 16:50:54 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
-int		ft_isdigital(int c)
+int		ft_isdigit(int c)
 {
-	if (c >= 0 && c <= 9)
+	if (c >= '0' && c <= '9')
 		return (1);
 	else
 		return (0);

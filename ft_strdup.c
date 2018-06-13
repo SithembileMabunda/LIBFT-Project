@@ -6,22 +6,21 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:23:47 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:36:25 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/11 08:24:00 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
-char *ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
-	char *s2;
-	int i;
+	char	*s2;
+	int		i;
 
 	i = 0;
 	while (s1[i] != '\0')
 		i++;
-	s2 = (char *) malloc(i * sizeof(char));
+	s2 = (char *)malloc(i * sizeof(char) + 1);
 	i = 0;
 	if (s2 != NULL)
 	{
@@ -31,5 +30,6 @@ char *ft_strdup(const char *s1)
 			i++;
 		}
 	}
+	s2[i] = '\0';
 	return (s2);
 }

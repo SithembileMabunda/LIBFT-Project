@@ -6,27 +6,20 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:42:19 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:28:43 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/11 08:46:59 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 void	*ft_memalloc(size_t size)
 {
 	void *value;
-	value = (size_t*) malloc (sizeof(size_t) * size);
+
+	value = (void *)malloc(sizeof(value) * size);
 	if (value == NULL)
 	{
-		printf("Failed to allocate memory");
-		exit (1);
+		return (NULL);
 	}
 	return (value = bzero(value, size));
-}
-
-int		main(void)
-{
-	printf("%s\n", ft_memalloc(5));
-	return (0);
 }

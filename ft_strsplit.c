@@ -6,13 +6,18 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/09 15:16:16 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:40:30 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/11 10:21:08 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
-char	*ft_strsplit(char const *s)
+char	**ft_strsplit(char const *s, char c)
 {
+	void *a;
+	char b;
+
+	a = (void *)s;
+	b = c;
+	return (NULL);
 }

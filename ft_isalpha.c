@@ -6,12 +6,11 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:31:30 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:27:31 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/10 12:29:00 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 int		ft_isalpha(int c)
 {

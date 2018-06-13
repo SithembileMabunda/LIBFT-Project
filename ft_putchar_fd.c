@@ -6,14 +6,13 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:54:27 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:31:05 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/13 08:52:05 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
-		write(fd, &c, 1);
+	write(fd, &c, 1);
 }

@@ -6,43 +6,23 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:45:10 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:36:53 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/11 12:42:17 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
-
-void	ft_iter(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		str[i] = 'a';
-		i++;
-	}
-}
+#include "libft.h"
 
 void	ft_striter(char *s, void (*f)(char *))
 {
 	int i;
 
 	i = 0;
-	while (s[i] != '\0')
+	if (s != NULL)
 	{
-		(*f)(&s[i]);
-		i++;
+		while (s[i] != '\0')
+		{
+			(*f)(&s[i]);
+			i++;
+		}
 	}
-}
-
-int		main(void)
-{
-	char s[] = "hello world";
-	void (*f)(char *);
-
-	f = &ft_iter;
-	ft_striter(s, f);
-	return (0);
 }

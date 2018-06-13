@@ -6,21 +6,23 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:45:34 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:37:09 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/11 12:43:08 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int i;
 
 	i = 0;
-	while (s[i] != '\0')
+	if (s != NULL)
 	{
-		(*f)(i, &s[i]);
-		i++;
+		while (s[i] != '\0')
+		{
+			(*f)(i, &s[i]);
+			i++;
+		}
 	}
 }

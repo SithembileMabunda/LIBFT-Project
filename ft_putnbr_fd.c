@@ -6,12 +6,11 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:56:57 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:34:18 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/10 16:59:09 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

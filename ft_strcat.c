@@ -6,39 +6,31 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:25:48 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:35:08 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/13 08:11:06 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 char	*ft_strcat(char *restrict s1, const char *restrict s2)
 {
-	int i;
+	int		i;
+	int		j;
+	char	*src;
+	char	*dest;
 
 	i = 0;
+	j = 0;
+	src = (char *)s2;
+	dest = (char *)s1;
 	while (dest[i] != '\0')
 		i++;
-	int dest_len = i;
-	while ( src[i] != '\0')
+	while (src[j] != '\0')
 	{
-		dest[dest_len + i] = src[i];
+		dest[i] = src[j];
 		i++;
+		j++;
 	}
-	dest[dest_len +i] = src[i];
-	return (dest);
-}
-
-int		main(void)
-{
-	char first[50];
-	char second[50];
-	strcpy(first, "hello");
-	strcpy(second, "world");
-
-	strlcat(first, second, (sizeof(char)*5));
-
-	printf("%s\n", first);
-	return (0);
+	dest[i] = '\0';
+	return (s1);
 }

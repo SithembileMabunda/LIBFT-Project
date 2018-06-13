@@ -6,14 +6,13 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:22:44 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:37:45 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/13 08:11:50 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	int i;
 	int j;
@@ -27,7 +26,7 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 		dstsize--;
 	}
 	if ((dstsize - 1) == 0)
-		return ((i) + strlen(src));
+		return ((i) + ft_strlen(src));
 	len = dstsize - i;
 	while (src[j] != '\0')
 	{
@@ -41,18 +40,4 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 	}
 	dst[i] = '\0';
 	return (i);
-}
-
-int		main(void)
-{
-	char first[50];
-	char second[50];
-	int c;
-	strcpy(first, "hello");
-	strcpy(second, "world");
-
-	c = (int) ft_strlcat(first, second, 6);
-
-	printf("%d\n", c);
-	return (0);
 }

@@ -6,28 +6,24 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:20:55 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:29:33 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/11 10:45:03 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int i;
-	char *dst;
-	char *str;
+	size_t	i;
+	char	*dst;
+	char	*str;
 
 	dst = (char *)dest;
 	str = (char *)src;
-	while (src[i] != '\0' && i < n)
-	{
-		dst[i] = str[i];
-	}
+	i = 0;
 	while (i < n)
 	{
-		dst[i] = '\0';
+		dst[i] = str[i];
 		i++;
 	}
 	return (dst);

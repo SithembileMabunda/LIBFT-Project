@@ -6,27 +6,11 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:22:03 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:26:29 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/10 12:57:13 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
-
-void	*ft_memset(void *s, int c, size_t n)
-{
-	int i;
-	char *str;
-
-	i = 0;
-	str = (char *)s;
-	while (i != n)
-	{
-		*(unsigned char *)(str + i) = (unsigned char)c;
-		i++;
-	}
-	return (str);
-}
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

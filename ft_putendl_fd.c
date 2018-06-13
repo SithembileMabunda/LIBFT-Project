@@ -6,22 +6,14 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:58:00 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:32:55 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/13 08:59:02 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 void	ft_putendl_fd(char const *s, int fd)
 {
-	int i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
-	write(fd, '\n', 1);
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }

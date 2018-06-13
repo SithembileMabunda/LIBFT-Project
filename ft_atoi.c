@@ -6,12 +6,11 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:30:58 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:25:49 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/13 12:04:37 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {
@@ -19,18 +18,20 @@ int		ft_atoi(const char *str)
 	int status;
 	int result;
 
-	while (str[i] == '\0' || str[i] == ' ' || str[i] == '\t' || str[i] == '\r' || str[i] == '\n' || str[i] == '\v' || str[i] == '\f')
+	i = 0;
+	status = 1;
+	result = 0;
+	while (str[i] == ' ' || str[i] == '\r' || str[i] == '\t' || str[i] == '\v'
+			|| str[i] == '\n' || str[i] == '\f')
 		i++;
 	if (str[i] == '-')
-	{
 		status = -1;
+	if (str[i] == '-' || str[i] == '+')
 		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[i] != '\0' && (str[i] >= '0' && str[i] <= '9'))
 	{
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
 	return (result * status);
 }
-//long protect

@@ -6,14 +6,20 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:42:44 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/09 15:29:56 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/13 08:53:33 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include "src.h"
+#include "libft.h"
 
 void	ft_memdel(void **ap)
 {
-	free(ap)
+	if (ap != NULL)
+	{
+		if (*ap != '\0' && ap != '\0')
+		{
+			free(*ap);
+			*ap = NULL;
+		}
+	}
 }
