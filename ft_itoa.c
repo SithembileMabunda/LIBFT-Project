@@ -6,7 +6,7 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:58:34 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/10 15:08:52 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/15 10:28:02 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,9 @@ char	*ft_itoa(int n)
 		sign = sign / 10;
 		i++;
 	}
-	str = (char *) malloc(sizeof(char) * (i + s));
+	str = (char *) malloc(sizeof(char) * (i + s) + 1);
+	if (str == NULL)
+		return (NULL);
 	i = 0;
 	while (n != 0)
 	{
