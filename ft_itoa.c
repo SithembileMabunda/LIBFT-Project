@@ -6,42 +6,47 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:58:34 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/15 15:17:56 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/17 12:29:40 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "stdio.h"
 
-char	*ft_itoa(int n)
+static int	numbers(int n)
 {
-	char *str;
-	int i;
-	int sign;
-	int s;
+	int	i;
 
-	i = 0;
-	s = 0;
-	if (n < 0 && ++s)
-		n = -n;
-	sign = n;
-	while (sign != 0)
-	{
-		sign = sign / 10;
+	i = 1;
+	while (n /= 10)
 		i++;
+	return (i);
+}
+
+char		*ft_itoa(int n)
+{
+	char			*str;
+	int				len;
+	unsigned int	tmp;
+
+	len = numbers(n);
+	tmp = n;
+	if (n < 0)
+	{
+		tmp = -n;
+		len += 1;
 	}
-	str = (char *) malloc(sizeof(char) * (i + s) + 1);
+	str = ft_strnew(len);
 	if (str == NULL)
 		return (NULL);
-	i = 0;
-	while (n != 0)
+	str[--len] = tmp % 10 + 48;
+	while (tmp /= 10)
 	{
-		str[i] = (n % 10) + '0';
-		i++;
-		n = n / 10;
+		str[--len] = (tmp % 10) + 48;
 	}
-	str[i + 1] = '\0';
-	if (s == 1)
-		str[i] = '-';
-	str = ft_strrev(str);
+	if (n < 0)
+	{
+		str[0] = 45;
+	}
 	return (str);
 }

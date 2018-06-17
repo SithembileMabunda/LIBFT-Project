@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/07 15:43:30 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/17 10:45:51 by smabunda         ###   ########.fr       */
+/*   Created: 2018/06/16 12:02:31 by smabunda          #+#    #+#             */
+/*   Updated: 2018/06/17 12:36:20 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strclr(char *s)
+char	*ft_strndup(const char *s, size_t n)
 {
-	int i;
+	size_t	i;
+	char	*dest;
 
 	i = 0;
-	if (s != NULL)
+	while (s[i] != '\0')
+		i++;
+	dest = (char *)malloc(sizeof(char) * n + 1);
+	if (dest == NULL)
+		return (NULL);
+	i = 0;
+	while (s[i] != '\0' && i < n)
 	{
-		while (s[i] != '\0')
-		{
-			if (s[i] != '\0')
-			{
-				s[i] = '\0';
-				i++;
-			}
-			else
-				i++;
-		}
+		dest[i] = s[i];
+		i++;
 	}
+	dest[i] = '\0';
+	return (dest);
 }

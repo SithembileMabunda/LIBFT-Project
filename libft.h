@@ -6,7 +6,7 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/23 13:05:33 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/14 13:13:15 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/17 12:44:07 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,6 @@ void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 char	*ft_strrev(char *str);
+char	*ft_strndup(const char *s, size_t n);
 
 #endif

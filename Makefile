@@ -6,7 +6,7 @@
 #    By: smabunda <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/06/10 15:47:08 by smabunda          #+#    #+#              #
-#    Updated: 2018/06/11 10:42:27 by smabunda         ###   ########.fr        #
+#    Updated: 2018/06/17 13:53:38 by smabunda         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,10 +67,64 @@ SOURCES = ft_memset.c \
 		  ft_putnbr_fd.c \
 		  \
 		  ft_strrev.c \
+		  ft_strndup.c \
 
-OBJECTS = *.o
+OBJECTS = ft_memset.o \
+		  ft_bzero.o \
+		  ft_memccpy.o \
+		  ft_memcpy.o \
+		  ft_memchr.o \
+		  ft_memcmp.o \
+		  ft_memmove.o \
+		  ft_strlen.o \
+		  ft_strdup.o \
+		  ft_strcpy.o \
+		  ft_strncpy.o \
+		  ft_strcat.o \
+		  ft_strncat.o \
+		  ft_strlcat.o \
+		  ft_strchr.o \
+		  ft_strrchr.o \
+		  ft_strstr.o \
+		  ft_strnstr.o \
+		  ft_strcmp.o \
+		  ft_strncmp.o \
+		  ft_atoi.o \
+		  ft_isalnum.o \
+		  ft_isalpha.o \
+		  ft_isdigit.o \
+		  ft_isascii.o \
+		  ft_isprint.o \
+		  ft_toupper.o \
+		  ft_tolower.o \
+		  ft_memalloc.o \
+		  ft_memdel.o \
+		  ft_strdel.o \
+		  ft_strnew.o \
+		  ft_strclr.o \
+		  ft_striter.o \
+		  ft_striteri.o \
+		  ft_strmap.o \
+		  ft_strmapi.o \
+		  ft_strequ.o \
+		  ft_strnequ.o \
+		  ft_strsub.o \
+		  ft_strjoin.o \
+		  ft_strtrim.o \
+		  ft_strsplit.o \
+		  ft_itoa.o \
+		  ft_putchar.o \
+		  ft_putstr.o \
+		  ft_putendl.o \
+		  ft_putnbr.o \
+		  ft_putchar_fd.o \
+		  ft_putstr_fd.o \
+		  ft_putendl_fd.o \
+		  ft_putnbr_fd.o \
+		  ft_strrev.o \
+		  ft_strndup.o \
 
-INCLUDES = libft.h
+INCLUDES = -I libft.h
 
 CC = gcc
 
@@ -79,7 +133,7 @@ CFLAGS = -Wall -Wextra -Werror -c
 all : $(NAME)
 
 $(NAME) :
-	$(CC) $(CFLAGS) $(SOURCES) -I $(INCLUDES)
+	$(CC) $(CFLAGS) $(SOURCES) $(INCLUDES)
 	ar rc $(NAME) $(OBJECTS)
 	ranlib $(NAME)
 

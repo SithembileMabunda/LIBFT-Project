@@ -6,7 +6,7 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:52:18 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/11 11:42:39 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/17 10:46:58 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_strequ(char const *s1, char const *s2)
 	char	*second;
 
 	i = 0;
-	if (s1 == NULL)
+	if (s1 == NULL || s2 == NULL)
 		return (0);
 	first = (char *)s1;
 	second = (char *)s2;

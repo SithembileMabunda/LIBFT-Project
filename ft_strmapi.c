@@ -6,7 +6,7 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/07 15:46:36 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/15 12:25:53 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/06/17 10:48:23 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*str;
 
 	i = 0;
-	while (s != NULL)
+	while (s != NULL && f != NULL)
 	{
 		while (s[i] != '\0')
 			i++;
