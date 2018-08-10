@@ -6,11 +6,11 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/11 12:53:23 by smabunda          #+#    #+#             */
-/*   Updated: 2018/07/11 12:58:20 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/08/10 10:38:53 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int		ft_isgraph(int c)
 {

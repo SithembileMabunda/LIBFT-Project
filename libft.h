@@ -6,7 +6,7 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/23 13:05:33 by smabunda          #+#    #+#             */
-/*   Updated: 2018/06/17 12:44:07 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/08/10 10:54:15 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@
 # include <string.h>
 # include <stdlib.h>
 # include <ctype.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <fcntl.h>
+
+# define BUFF_SIZE 32
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -74,5 +79,14 @@ void	ft_putnbr_fd(int n, int fd);
 
 char	*ft_strrev(char *str);
 char	*ft_strndup(const char *s, size_t n);
+char	*ft_strerror(int errnum);
+int		ft_toascii(int c);
+int		ft_isxdigit(int c);
+int		ft_isrune(int c);
+int		ft_isprint(int c);
+int		ft_iscntrl(int c);
+int		ft_isblank(int c);
+int		ft_isspace(int c);
+int		get_next_line(const int fd, char **line);
 
 #endif

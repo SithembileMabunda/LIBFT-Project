@@ -6,11 +6,11 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/11 13:06:48 by smabunda          #+#    #+#             */
-/*   Updated: 2018/07/11 13:09:42 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/08/10 10:41:32 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int		ft_isxdigit(int c)
 {

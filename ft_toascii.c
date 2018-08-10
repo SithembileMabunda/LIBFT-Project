@@ -6,11 +6,11 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/11 13:15:00 by smabunda          #+#    #+#             */
-/*   Updated: 2018/07/11 13:31:17 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/08/10 10:42:22 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int		ft_toascii(int c)
 {

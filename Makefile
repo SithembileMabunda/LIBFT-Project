@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: smabunda <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/06/10 15:47:08 by smabunda          #+#    #+#              #
-#    Updated: 2018/06/17 13:53:38 by smabunda         ###   ########.fr        #
+#    Created: 2018/08/07 12:23:21 by smabunda          #+#    #+#              #
+#    Updated: 2018/08/10 10:52:11 by smabunda         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,6 +68,15 @@ SOURCES = ft_memset.c \
 		  \
 		  ft_strrev.c \
 		  ft_strndup.c \
+		  get_next_line.c \
+		  ft_isblank.c \
+		  ft_iscntrl.c \
+		  ft_isprint.c \
+		  ft_isrune.c \
+		  ft_isspace.c \
+		  ft_isxdigit.c \
+		  ft_toascii.c \
+		  ft_strerror.c \
 
 OBJECTS = ft_memset.o \
 		  ft_bzero.o \
@@ -123,6 +132,15 @@ OBJECTS = ft_memset.o \
 		  ft_putnbr_fd.o \
 		  ft_strrev.o \
 		  ft_strndup.o \
+		  get_next_line.o \
+		  ft_isblank.o \
+		  ft_iscntrl.o \
+		  ft_isprint.o \
+		  ft_isrune.o \
+		  ft_isspace.o \
+		  ft_isxdigit.o \
+		  ft_toascii.o \
+		  ft_strerror.o \
 
 INCLUDES = -I libft.h
 

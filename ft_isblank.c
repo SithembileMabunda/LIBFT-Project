@@ -6,11 +6,11 @@
 /*   By: smabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/11 12:28:50 by smabunda          #+#    #+#             */
-/*   Updated: 2018/07/11 12:32:37 by smabunda         ###   ########.fr       */
+/*   Updated: 2018/08/10 10:38:02 by smabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int		ft_isblank(int c)
 {
